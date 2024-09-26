@@ -1,3 +1,6 @@
+Final Project Midtrans Snap Native :
+https://github.com/isanmh/transkopi
+
 Cara menggunakan midtrans payment gateway :
 1. Buka website midtrans : https://www.midtrans.com/
 2. daftar akun midtrans
