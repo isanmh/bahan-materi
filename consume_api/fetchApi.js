@@ -1,12 +1,17 @@
 console.log("test");
 // reqres in user
 const url = "https://reqres.in/api/users";
+// const url = "http://127.0.0.1:8000/api/products";
 
 // get product data
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
+    // console.log(data.data);
+    // console.log(data.message);
+    // console.log(data.data[0].name);
+    // console.log(data.data[0].price);
+    // console.log(data.data[0].description);
   });
 
 // get by id
@@ -14,7 +19,7 @@ const id = 1;
 fetch(url + `/${id}`)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
+    // console.log(data.status);
   });
 
 // post user
@@ -24,8 +29,8 @@ fetch(url, {
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-    name: "ihsan",
-    job: "fullstack",
+    name: "ihsan miftahul huda",
+    job: "UI/UX Designer",
   }),
 })
   .then((response) => response.json())

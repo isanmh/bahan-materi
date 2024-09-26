@@ -5,6 +5,14 @@ https://github.com/isanmh/be_toko
 - npm install @prisma/cli
 - npx prisma init
 
+# cara install pnpm :
+- npm install -g pnpm
+
+# install nodemodules :
+- pnpm install
+atau 
+- npm install
+
 # untuk migrate : 
 - npx prisma migrate dev --name init
 - pnpm prisma migrate dev --name init
@@ -17,13 +25,24 @@ DATABASE_URL="mysql://root:password@localhost:3306/db_toko"
 - upgrage mysql:
 mysql_upgrade
 
+# cara menjalankan server :
+- pnpm run dev
+
 - Buka doc midtrans 
 - Masuk ke features/transactions/index.js (fungsi createTransaction)
+# import const :
 
 # untuk midtrans, midtrains server (key btoa = base64 encode)
 const authString = btoa(`${MIDTRANS_SERVER_KEY}:`);
 
 - tambahkan key di utils/constans.js :
+# Tambahkan Import diatas :
+import {
+  MIDTRANS_SERVER_KEY,
+  FRONT_END_URL,
+  MIDTRANS_APP_URL,
+} from "../../utils/constant.js";
+
 # midtrans server key
 export const MIDTRANS_SERVER_KEY = process.env.MIDTRANS_SERVER_KEY;
 

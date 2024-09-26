@@ -4,6 +4,9 @@ https://github.com/isanmh/fe_toko
 - cara install pnpm :
 npm install -g pnpm
 pnpm install
+
+- setting env & client id di .env :
+- cara menjalankan server :
 pnpm run dev
 
 SET MIDTRANS :
@@ -59,6 +62,9 @@ export default useSnap;
 
 - tambahkan di pages/checkout/index.js
 # fungsi checkout (fungsi pay) :
+# import diatas :
+import useSnap from "../../hooks/useSnap";
+
 # Snap Embed
 const { snapEmbed } = useSnap();
 # untuk snapShow
