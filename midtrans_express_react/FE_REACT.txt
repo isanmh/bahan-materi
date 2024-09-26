@@ -1,3 +1,6 @@
+Project:
+https://github.com/isanmh/fe_toko
+
 - cara install pnpm :
 npm install -g pnpm
 pnpm install

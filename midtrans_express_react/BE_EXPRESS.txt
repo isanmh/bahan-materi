@@ -1,3 +1,6 @@
+Project: 
+https://github.com/isanmh/be_toko 
+
 # cara install prisma :
 - npm install @prisma/cli
 - npx prisma init
