@@ -15,11 +15,12 @@
     <title>REST API- Training</title>
   </head>
   <body>
+    <!-- header -->
     <section>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="/"
-            ><strong class="text-primary">Node App</strong></a
+            ><strong class="text-primary">REST App</strong></a
           >
           <button
             class="navbar-toggler"
@@ -50,55 +51,15 @@
         </div>
       </nav>
     </section>
-    <!-- landing page -->
-    <section id="banner" class="container">
-      <div class="row">
-        <!-- typograpy -->
-        <div
-          data-aos="fade-right"
-          data-delay="300"
-          data-aos-duration="2000"
-          class="col-md-6 pt-5 pt-lg-5 d-flex justify-content-center flex-column order-lg-1 order-2"
-        >
-          <h1>
-            Cotinous Learning keep Up to Date with
-            <strong class="text-primary">Inixindo</strong>
-          </h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
-            molestiae aspernatur iste tenetur voluptates? Maxime aspernatur
-            consequatur, tenetur esse ab iusto ad harum perspiciatis autem ea
-            culpa iste velit nam.
-          </p>
-          <div class="mt-4">
-            <a href="/" class="btn btn-primary">Get Started</a>
-          </div>
-        </div>
-        <!-- image -->
-        <div
-          data-aos="zoom-in"
-          data-delay="300"
-          data-aos-duration="2000"
-          class="col-md-6 pt-5 order-lg-2 order-1"
-        >
-          <img src="images/logo.svg" alt="logo" class="img-fluid animasi" />
-        </div>
-      </div>
-    </section>
 
-    <!-- Teams -->
+    <!-- Products -->
     <section
       class="container d-flex justify-content-center flex-column mb-5 mt-5"
     >
-      <h1 class="text-center">Our Teams</h1>
+      <h1 class="text-center">Our Products</h1>
       <hr />
       <div class="row list-data">
-        <div
-          data-aos="zoom-in"
-          data-delay="100"
-          data-aos-duration="2000"
-          class="col-md-4 mb-3"
-        >
+        <div class="col-md-4 mb-3">
           <div class="card">
             <img src="images/logo.svg" alt="node" class="card-img-top" />
             <div class="card-body">
@@ -123,6 +84,6 @@
       AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <script src="api.js"></script>
+    <script src="apiProduct.js"></script>
   </body>
 </html>
