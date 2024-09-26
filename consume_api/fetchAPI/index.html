@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>REST API- Training</title>
+  </head>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"
+            ><strong class="text-primary">Node App</strong></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-primary" aria-current="page" href="/"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="services.html"
+                  >Services</a
+                >
+              </li>
+            </ul>
+            <a class="btn btn-outline-primary" href="/"> Get Started </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- landing page -->
+    <section id="banner" class="container">
+      <div class="row">
+        <!-- typograpy -->
+        <div
+          data-aos="fade-right"
+          data-delay="300"
+          data-aos-duration="2000"
+          class="col-md-6 pt-5 pt-lg-5 d-flex justify-content-center flex-column order-lg-1 order-2"
+        >
+          <h1>
+            Cotinous Learning keep Up to Date with
+            <strong class="text-primary">Inixindo</strong>
+          </h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+            molestiae aspernatur iste tenetur voluptates? Maxime aspernatur
+            consequatur, tenetur esse ab iusto ad harum perspiciatis autem ea
+            culpa iste velit nam.
+          </p>
+          <div class="mt-4">
+            <a href="/" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+        <!-- image -->
+        <div
+          data-aos="zoom-in"
+          data-delay="300"
+          data-aos-duration="2000"
+          class="col-md-6 pt-5 order-lg-2 order-1"
+        >
+          <img src="images/logo.svg" alt="logo" class="img-fluid animasi" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Teams -->
+    <section
+      class="container d-flex justify-content-center flex-column mb-5 mt-5"
+    >
+      <h1 class="text-center">Our Teams</h1>
+      <hr />
+      <div class="row list-data">
+        <div
+          data-aos="zoom-in"
+          data-delay="100"
+          data-aos-duration="2000"
+          class="col-md-4 mb-3"
+        >
+          <div class="card">
+            <img src="images/logo.svg" alt="node" class="card-img-top" />
+            <div class="card-body">
+              <div class="card-text">Ihsan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // import AOS from "aos";
+      // import "aos/dist/aos.css";
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+  </body>
+</html>
