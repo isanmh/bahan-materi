@@ -18,17 +18,18 @@ const Edit = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    getProduct();
+    // getProduct();
   }, []);
 
   // edit Product
   const getProduct = async () => {
-    const res = await axios.get(`${Api}/${id}`);
-    setName(res.data.data.name);
-    setDescription(res.data.data.description);
-    setPrice(res.data.data.price);
-    setPreview(`${Url}/${res.data.data.image}`);
-    setPreviewName(res.data.data.image);
+    // const res = await axios.get(`${Api}/${id}`);
+    // console.log(res.data.data);
+    // setName(res.data.data.name);
+    // setDescription(res.data.data.description);
+    // setPrice(res.data.data.price);
+    // setPreview(`${Url}/${res.data.data.image}`);
+    // setPreviewName(res.data.data.image);
   };
 
   const loadImage = (e) => {
@@ -49,25 +50,25 @@ const Edit = () => {
       await axios.post(`${Api}/${id}`, formData, {
         headers: {
           "Content-type": "multipart/form-data",
-          // Accept: "application/json",
+          Accept: "application/json",
         },
       });
       // with sweetalert2
       Swal.fire({
         position: "center",
         icon: "success",
-        title: "Data berhasil ditambahkan",
+        title: "Data berhasil diupdate",
         showConfirmButton: false,
         timer: 1500,
       });
 
       navigate("/index-list");
     } catch (error) {
-      console.log(error);
-      if (error.response.status === 422) {
-        console.log(error.response.data.errors);
-        setErrors(error.response.data.errors);
-      }
+      // console.log(error);
+      // if (error.response.status === 422) {
+      //   console.log(error.response.data.errors);
+      //   setErrors(error.response.data.errors);
+      // }
     }
   };
 

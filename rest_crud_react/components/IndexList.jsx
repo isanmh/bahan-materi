@@ -9,13 +9,13 @@ const IndexList = () => {
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
-    getProduct();
+    // getProduct();
   }, []);
 
   const getProduct = async () => {
-    const res = await axios.get(Api);
-    console.log(res.data.data);
-    setProduct(res.data.data);
+    // const res = await axios.get(Api);
+    // console.log(res.data.data);
+    // setProduct(res.data.data);
   };
 
   // const deleteProduct = async (productId) => {
@@ -40,8 +40,9 @@ const IndexList = () => {
         confirmButtonText: "Yes, delete it!",
       }).then(async (result) => {
         if (result.isConfirmed) {
-          await axios.delete(`${Api}/${productId}`);
-          getProduct();
+          // console.log("delete id :", productId);
+          // await axios.delete(`${Api}/${productId}`);
+          // getProduct();
           Swal.fire("Deleted!", "File anda berhasil dihapus.", "success");
         }
       });
@@ -71,16 +72,20 @@ const IndexList = () => {
                 {/* gambar */}
                 <div className="card-img-top">
                   <img
-                    src={`${Url}/${item.image}`}
+                    // src={`${Url}/${item.image}`}
+                    src="https://via.placeholder.com/150"
                     alt={item.image}
                     className="img-thumbnail"
                     style={{ height: 200 }}
                     width="100%"
                   />
                 </div>
-                <h5 className="card-title">{item.name}</h5>
-                <small className="card-text">{item.description}</small>
-                <p className="card-text">{item.price}</p>
+                <h5 className="card-title">
+                  {/* {item.name} */}
+                  Kopi
+                </h5>
+                {/* <small className="card-text">{item.description}</small> */}
+                {/* <p className="card-text">{item.price}</p> */}
                 <div className="d-flex justify-content-between align-items-center">
                   <div className="btn-group">
                     <Link

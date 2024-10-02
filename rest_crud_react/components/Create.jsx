@@ -30,12 +30,15 @@ const Create = () => {
     formData.append("name", name);
     formData.append("description", description);
     formData.append("price", price);
+
     try {
-      await axios.post(Api, formData, {
-        headers: {
-          "Content-type": "multipart/form-data",
-        },
-      });
+      // log data dari form
+      // console.log(formData.get("name"));
+      // await axios.post(Api, formData, {
+      //   headers: {
+      //     "Content-type": "multipart/form-data",
+      //   },
+      // });
       // with sweetalert2
       Swal.fire({
         position: "center",
@@ -44,13 +47,13 @@ const Create = () => {
         showConfirmButton: false,
         timer: 1500,
       });
-      navigate("/index-list");
+      // navigate("/index-list");
     } catch (error) {
       // console.log(error);
-      if (error.response.status === 422) {
-        console.log(error.response.data.errors.image[0]);
-        setErrors(error.response.data.errors);
-      }
+      // if (error.response.status === 422) {
+      //   console.log(error.response);
+      //   setErrors(error.response.data.errors);
+      // }
     }
   };
 
@@ -69,7 +72,7 @@ const Create = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
-              {errors.name ? (
+              {/* {errors.name ? (
                 <div className="text-danger">
                   {errors.name.map((error) => (
                     <small key={error}>{error}</small>
@@ -77,7 +80,7 @@ const Create = () => {
                 </div>
               ) : (
                 ""
-              )}
+              )} */}
             </div>
             <div className="form-group my-3">
               <label>Description</label>
@@ -87,7 +90,7 @@ const Create = () => {
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
               />
-              {errors.description ? (
+              {/* {errors.description ? (
                 <div className="text-danger">
                   {errors.description.map((error) => (
                     <small key={error}>{error}</small>
@@ -95,7 +98,7 @@ const Create = () => {
                 </div>
               ) : (
                 ""
-              )}
+              )} */}
             </div>
             <div className="form-group my-3">
               <label>Price</label>
@@ -105,7 +108,7 @@ const Create = () => {
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
               />
-              {errors.price ? (
+              {/* {errors.price ? (
                 <div className="text-danger">
                   {errors.price.map((error) => (
                     <small key={error}>{error}</small>
@@ -113,7 +116,7 @@ const Create = () => {
                 </div>
               ) : (
                 ""
-              )}
+              )} */}
             </div>
             <div className="form-group my-3">
               <label>Image</label>
@@ -123,7 +126,7 @@ const Create = () => {
                 onChange={loadImage}
               />
             </div>
-            {errors.image ? (
+            {/* {errors.image ? (
               <div className="text-danger">
                 {errors.image.map((error) => (
                   <>
@@ -134,7 +137,7 @@ const Create = () => {
               </div>
             ) : (
               ""
-            )}
+            )} */}
             {/* button submit */}
             <button type="submit" className="btn btn-primary my-2">
               Add Product
