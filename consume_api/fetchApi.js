@@ -8,10 +8,6 @@ fetch(url)
   .then((response) => response.json())
   .then((data) => {
     // console.log(data.data);
-    // console.log(data.message);
-    // console.log(data.data[0].name);
-    // console.log(data.data[0].price);
-    // console.log(data.data[0].description);
   });
 
 // get by id
